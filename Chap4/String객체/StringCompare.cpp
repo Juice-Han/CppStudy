@@ -14,5 +14,13 @@ int main(){
         cout << "두 문자열은 다릅니다." << endl;
     }
 
+    string str3 = "Apple is delicious";
+    int res1 = str1.compare(str3); // str1 이 사전상 앞에 온다면 음수 리턴
+    if(res1 < 0){
+        cout << str1 << " < " << str3;
+    }else{
+        cout << str1 << " > " << str3;
+    }
+
     return 0;
 }
