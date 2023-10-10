@@ -17,9 +17,15 @@ int main(){
     string str3 = "Apple is delicious";
     int res1 = str1.compare(str3); // str1 이 사전상 앞에 온다면 음수 리턴
     if(res1 < 0){
-        cout << str1 << " < " << str3;
+        cout << str1 << " < " << str3 << endl;
     }else{
-        cout << str1 << " > " << str3;
+        cout << str1 << " > " << str3 << endl;
+    }
+
+    if(str1 < str3){ //이렇게 간단하게 문자열 비교를 할 수 있다.
+        cout << str1 << " < " << str3 << endl;
+    }else{
+        cout << str1 << " > " << str3 << endl;
     }
 
     return 0;
