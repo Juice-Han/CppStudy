@@ -7,13 +7,15 @@ class Person
 {
     char *name;
     int id;
-
+    double grade;
 public:
     Person(int id, const char *name);
+    Person(int id, const char *name, double grade);
     ~Person();
     Person(const Person& p);
     void changeName(const char *name);
     void show() { cout << id << ',' << name << endl; }
+    void showGrade() {cout << grade << endl;}
 };
 
 Person::Person(int id, const char *name)
@@ -24,6 +26,9 @@ Person::Person(int id, const char *name)
     strcpy(this->name, name);
 }
 
+Person::Person(int id, const char *name, double grade) : Person(id, name){
+    this->grade = grade;
+}
 Person::~Person()
 {
     if (name)
@@ -63,4 +68,8 @@ int main()
 
     father.show();
     daughter.show();
+
+    Person p1(2,"Juhan",4.4);
+    p1.show();
+    p1.showGrade();
 }
