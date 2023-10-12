@@ -28,6 +28,8 @@ int main(){
     string newString = str.substr(0,1); //0번째 인덱스포함 1개의 문자를 발췌
 
     cout << newString << endl;
+
+    
     
     return 0;
 }
