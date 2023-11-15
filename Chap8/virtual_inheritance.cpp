@@ -27,5 +27,6 @@ int main(){
 
     ioObj.readPos = 10;
     ioObj.writePos = 10;
-    
+    ioObj.safe = true;
+    ioObj.mode = 5;
 }
